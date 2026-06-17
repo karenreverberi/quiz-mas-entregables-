@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Relámpago</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="contenedor">
+    <section class="cabecera">
+      <h1> Quiz Relámpago</h1>
+      <p>Respondé las 6 preguntas y descubrí tu resultado final.</p>
+
+      <label for="input-nombre">Tu nombre:</label>
+      <input type="text" id="input-nombre" placeholder="Escribí tu nombre">
+
+      <p id="ultimo-puntaje"></p>
+      <p id="contador">Respondiste 0 de 6</p>
+    </section>
+
+    <section class="preguntas">
+
+      <div class="pregunta">
+        <p class="num-pregunta">Pregunta 1</p>
+        <p class="texto-pregunta">¿Qué lenguaje se usa para darle estructura a una página web?</p>
+        <button id="btn-p0-0" class="btn-opcion" onclick="responder(0, 0)">CSS</button>
+        <button id="btn-p0-1" class="btn-opcion" onclick="responder(0, 1)">HTML</button>
+        <button id="btn-p0-2" class="btn-opcion" onclick="responder(0, 2)">JavaScript</button>
+        <button id="btn-p0-3" class="btn-opcion" onclick="responder(0, 3)">Python</button>
+      </div>
+
+      <div class="pregunta">
+        <p class="num-pregunta">Pregunta 2</p>
+        <p class="texto-pregunta">¿Qué lenguaje se usa principalmente para dar estilos?</p>
+        <button id="btn-p1-0" class="btn-opcion" onclick="responder(1, 0)">HTML</button>
+        <button id="btn-p1-1" class="btn-opcion" onclick="responder(1, 1)">CSS</button>
+        <button id="btn-p1-2" class="btn-opcion" onclick="responder(1, 2)">SQL</button>
+        <button id="btn-p1-3" class="btn-opcion" onclick="responder(1, 3)">PHP</button>
+      </div>
+
+      <div class="pregunta">
+        <p class="num-pregunta">Pregunta 3</p>
+        <p class="texto-pregunta">¿Qué estructura permite guardar varios datos en una sola variable?</p>
+        <button id="btn-p2-0" class="btn-opcion" onclick="responder(2, 0)">Array</button>
+        <button id="btn-p2-1" class="btn-opcion" onclick="responder(2, 1)">Alert</button>
+        <button id="btn-p2-2" class="btn-opcion" onclick="responder(2, 2)">Prompt</button>
+        <button id="btn-p2-3" class="btn-opcion" onclick="responder(2, 3)">Console</button>
+      </div>
+
+      <div class="pregunta">
+        <p class="num-pregunta">Pregunta 4</p>
+        <p class="texto-pregunta">¿Qué método se usa para seleccionar un elemento por su ID?</p>
+        <button id="btn-p3-0" class="btn-opcion" onclick="responder(3, 0)">querySelectorAll</button>
+        <button id="btn-p3-1" class="btn-opcion" onclick="responder(3, 1)">getElementById</button>
+        <button id="btn-p3-2" class="btn-opcion" onclick="responder(3, 2)">addEventListener</button>
+        <button id="btn-p3-3" class="btn-opcion" onclick="responder(3, 3)">localStorage</button>
+      </div>
+
+      <div class="pregunta">
+        <p class="num-pregunta">Pregunta 5</p>
+        <p class="texto-pregunta">¿Qué evento ocurre cuando el usuario hace click?</p>
+        <button id="btn-p4-0" class="btn-opcion" onclick="responder(4, 0)">input</button>
+        <button id="btn-p4-1" class="btn-opcion" onclick="responder(4, 1)">submit</button>
+        <button id="btn-p4-2" class="btn-opcion" onclick="responder(4, 2)">click</button>
+        <button id="btn-p4-3" class="btn-opcion" onclick="responder(4, 3)">change</button>
+      </div>
+
+      <div class="pregunta">
+        <p class="num-pregunta">Pregunta 6</p>
+        <p class="texto-pregunta">¿Qué permite hacer localStorage?</p>
+        <button id="btn-p5-0" class="btn-opcion" onclick="responder(5, 0)">Guardar datos en el navegador</button>
+        <button id="btn-p5-1" class="btn-opcion" onclick="responder(5, 1)">Cambiar el color de fondo</button>
+        <button id="btn-p5-2" class="btn-opcion" onclick="responder(5, 2)">Crear botones automáticamente</button>
+        <button id="btn-p5-3" class="btn-opcion" onclick="responder(5, 3)">Borrar el HTML</button>
+      </div>
+
+    </section>
+
+    <section class="acciones">
+      <button id="btn-resultado">Ver resultado</button>
+      <button id="btn-reiniciar">Reiniciar</button>
+      <p id="resultado"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

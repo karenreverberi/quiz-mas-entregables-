@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #fce7f3);
+  color: pink;
+  padding: 30px 15px;
+}
+
+.contenedor {
+  max-width: 850px;
+  margin: auto;
+}
+
+.cabecera {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.cabecera h1 {
+  color: papayawhip;
+  margin-bottom: 10px;
+}
+
+.cabecera p {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#input-nombre {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px;
+  border: 2px solid pink;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+#input-nombre:focus {
+  border-color: palevioletred;
+}
+
+#ultimo-puntaje {
+  color: fuchsia;
+  font-weight: bold;
+}
+
+#contador {
+  color: pink;
+  font-weight: bold;
+}
+
+.pregunta {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.num-pregunta {
+  font-weight: bold;
+  color: plum;
+  margin-bottom: 8px;
+}
+
+.texto-pregunta {
+  font-size: 19px;
+  margin-bottom: 18px;
+}
+
+.btn-opcion {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  background: #eff6ff;
+  color: palevioletred;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-opcion:hover {
+  background: #dbeafe;
+  transform: scale(1.01);
+}
+
+.btn-opcion:disabled {
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+
+.correcta {
+  background: #16a34a !important;
+  color: white !important;
+}
+
+.incorrecta {
+  background: #dc2626 !important;
+  color: white !important;
+}
+
+.acciones {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+#btn-resultado,
+#btn-reiniciar {
+  padding: 13px 22px;
+  margin: 8px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#btn-resultado {
+  background: plum;
+}
+
+#btn-reiniciar {
+  background: pink;
+}
+
+#btn-resultado:hover,
+#btn-reiniciar:hover {
+  opacity: 0.85;
+}
+
+#resultado {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #111827;
+}
